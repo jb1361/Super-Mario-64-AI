@@ -31,7 +31,7 @@ namespace MarioAI
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Enter key pressed");
             Input.Start_keyPress();
-
+            
             System.Threading.Thread.Sleep(58000);
             Console.WriteLine("X key pressed");
             Input.X_keyPress();
@@ -43,7 +43,7 @@ namespace MarioAI
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Up Arrow key pressed");
             Input.I_keyDown();
-
+            
         }
 
         
