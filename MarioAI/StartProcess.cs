@@ -34,7 +34,7 @@ namespace MarioAI
             proc.StandardInput.WriteLine("cd " + newPath);
             proc.StandardInput.WriteLine("Project64.exe");       
             Console.WriteLine("Process Started.");
-      
+            
         }
     }
 }

@@ -48,6 +48,7 @@
     <Compile Include="HookProject64.cs" />
     <Compile Include="Keyboard.cs" />
     <Compile Include="KeyPressEventListener.cs" />
+    <Compile Include="ReceiveStdIn.cs" />
     <Compile Include="_input.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

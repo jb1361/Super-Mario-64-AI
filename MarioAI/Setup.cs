@@ -27,22 +27,22 @@ namespace MarioAI
             //Input to get started in the game
             _input Input = new _input();
             Console.WriteLine("Enter key pressed");
-            Input.Start_key();
+            Input.Start_keyPress();
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Enter key pressed");
-            Input.Start_key();
+            Input.Start_keyPress();
 
             System.Threading.Thread.Sleep(58000);
             Console.WriteLine("X key pressed");
-            Input.X_key();
+            Input.X_keyPress();
 
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("X key pressed");
-            Input.X_key();
+            Input.X_keyPress();
 
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Up Arrow key pressed");
-            Input.UpArrow_key();
+            Input.I_keyDown();
 
         }
 
