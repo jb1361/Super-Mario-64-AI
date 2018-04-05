@@ -18,6 +18,8 @@ namespace MarioAI
         {
             StartProcess proc = new StartProcess();
             proc.start();
+            _input Input = new _input();
+            
         }
     }
 }

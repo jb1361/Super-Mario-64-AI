@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,6 @@ namespace MarioAI
     {
         public void start()
         {
-           // try
-           // {
                 Console.WriteLine("Starting Project64.");
                 var proc = new Process
                 {
@@ -25,13 +24,12 @@ namespace MarioAI
                         CreateNoWindow = false
                     }
                 };
-                proc.Start();
-                proc.StandardInput.WriteLine("cd C:/Users/justi/Desktop/Class files repo/Class-files-repo/C463 AI/Mario64AI/Project64 2.3");
-                proc.StandardInput.WriteLine("Project64.exe"); 
-            //  }catch(Exception e)
-            //  {
-            //      Console.WriteLine("Couldn't start Project64, check that filepaths are correct.");
-            //  }
+            string path = Directory.GetCurrentDirectory();
+            string newPath = Path.GetFullPath(Path.Combine(path, @"..\..\..\Project64 2.3\"));
+            Console.WriteLine(newPath);
+            proc.Start();
+            proc.StandardInput.WriteLine("cd " + newPath);
+            proc.StandardInput.WriteLine("Project64.exe");       
             Console.WriteLine("Process Started.");
         }
     }
