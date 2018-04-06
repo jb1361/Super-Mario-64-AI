@@ -14,7 +14,7 @@ namespace MarioAI
             Setup setup = new Setup();
             Console.WriteLine("Starting Thread.");
             Thread myThread = new System.Threading.Thread(new
-             System.Threading.ThreadStart(setup.run));
+            System.Threading.ThreadStart(setup.run));
             myThread.Start();
         }
 
@@ -31,19 +31,7 @@ namespace MarioAI
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Enter key pressed");
             Input.Start_keyPress();
-            
-            System.Threading.Thread.Sleep(58000);
-            Console.WriteLine("X key pressed");
-            Input.X_keyPress();
-
-            System.Threading.Thread.Sleep(2000);
-            Console.WriteLine("X key pressed");
-            Input.X_keyPress();
-
-            System.Threading.Thread.Sleep(2000);
-            Console.WriteLine("Up Arrow key pressed");
-            Input.I_keyDown();
-            
+                  
         }
 
         
